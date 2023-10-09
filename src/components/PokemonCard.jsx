@@ -1,7 +1,7 @@
 function PokemonCard () {
-    const pokemon = "Bulbasaur"; 
+    const pokemon = "bulbasaur"; 
 
-    return <p>{pokemon === "Bulbasaur" ? <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" /> : "???"}</p>;
+    return <p>{pokemon === "bulbasaur" ? <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" /> : "???"}</p>;
    
 }
 
