@@ -2,15 +2,16 @@ import PokemonCard from "./PokemonCard";
 
 function NavBar( {pokemonIndex, pokemonList, setPokemonIndex}) {
 
-      const handleIndex = (indexDePokemonClicke) => {
+      const handleIndex = (indexDePokemonClicke, pokemonIndex) => {
 
         setPokemonIndex(indexDePokemonClicke)
-      }
+        pokemonIndex === "pikachu" && alert("pika pikachu !!!") 
+      } 
 
     return (
        <div>
           {pokemonList.map((pokemon, index) => (
-            <button key={index} onClick={() => {handleIndex(index)}}>{pokemon.name}</button>
+            <button key={index} onClick={() => {handleIndex(index, pokemon.name)}}>{pokemon.name}</button>
           ))}  
         </div> 
     );
